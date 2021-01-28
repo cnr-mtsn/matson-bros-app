@@ -1,11 +1,19 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-import {Card} from '../styles/style';
+import { NavigationContainer } from "@react-navigation/native";
+import React from "react";
+import { Text, View } from "react-native";
+import { Card, CardText, CardTitle } from "../styles/style";
 
-export default function SiteCard({site}) {
+
+export default function SiteCard({ site, navigation }) {
   return (
-    <Card>
-      <Text>{site.id}</Text>
+    <Card onPress={() => navigation.navigate("Site Details", {
+      site,
+      headerTitle: site.location
+    })}>
+      <View>
+        <CardTitle>{site.builder}</CardTitle>
+        <CardText>{site.location}</CardText>
+      </View>
     </Card>
-  )
+  );
 }

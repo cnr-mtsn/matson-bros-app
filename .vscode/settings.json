@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "bracketPairColorizer.colorMode": "Independent",
+  "bracketPairColorizer.forceUniqueOpeningColor": true
+}

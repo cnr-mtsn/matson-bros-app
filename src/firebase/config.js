@@ -1,6 +1,6 @@
-import * as firebase from 'firebase';
-import '@firebase/auth';
-import '@firebase/firestore';
+import * as firebase from "firebase";
+import "@firebase/auth";
+import "@firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyByQmOEPPj3Hm2bbahwDT46t1_2cUxjH9k",
@@ -9,11 +9,11 @@ const firebaseConfig = {
   projectId: "matsonbros",
   storageBucket: "matsonbros.appspot.com",
   messagingSenderId: "211895810110",
-  appId: "1:211895810110:web:0563643ea315bae92b796f"
+  appId: "1:211895810110:web:0563643ea315bae92b796f",
 };
 
 if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
 }
 
 export { firebase };
